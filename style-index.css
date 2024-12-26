@@ -1,0 +1,188 @@
+/* Geral css */
+
+:root{
+    --purple:#030a5d;
+    --purple-light:#241930;
+    --dark-blue:#19233F;
+    --blue:#5c65c0;
+    --skyblue :#00b4fc;
+    --light-blue:#3F5183;
+    --dark-pink:#690F11;
+    --dark-magenta:#CF5F82;
+    --light-green:#61e2c2;
+    --light-purple:#d9abff;
+    --dark-gray: #171717;
+    --light-gray: #1e1e1e;
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+}
+@keyframes popup{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+body{
+    background: radial-gradient(var(--light-blue),var(--dark-blue));
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-box{
+    width: 100%;
+    background: var(--light-gray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+a {
+    color: inherit;
+} 
+
+.menu li{
+    border-radius: 0.2rem;
+    font-size: larger;
+    width: 100%;
+    background: --dar;
+    padding: 0.2rem;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    box-shadow: 2px 2px 1px 1px var(--dark-gray);
+}
+.menu li:hover{
+    background: var(--dark-gray);
+    animation-name: popup;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    transform: scale(1.2);
+}
+.main-card{
+    width: 80%;
+    min-width: 750px;
+    min-height: max-content !important;
+    height: 100vw !important;
+    background: var(--dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-pic{
+    width: 55%;
+    height: auto;
+    border-radius: 10px;
+}
+.right p{
+    font-size: 300%;
+    font-weight: bold !important;
+    margin: 5%;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-card p{
+    margin-bottom: 3px;
+    text-align: justify;
+    line-height: 1.1;
+    font-size: large;
+    color: gray;
+}
+.about-card{
+    width: 90%;
+    background: var(--light-gray);
+    min-height: 10rem;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1%;
+    text-indent:5%;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    font-size: xx-large;
+}
+.social-icons a i:hover{
+    animation-name: popup;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-duration: 0.3s;
+    transform: scale(1.2);
+}
+.social-icons a i{
+    width: 100%;
+    background: var(--light-gray);
+    padding: 0.5rem;
+    border-radius: 15%;
+    transition: 0.5s;
+    min-width: fit-content !important;
+    
+}
+.devbtn h3{
+    font-size: 150%;
+    font-weight: normal !important;
+    margin: 5%;
+}
+.devbtn{
+    width: 33%;
+    height: auto;
+    border-radius: 0.3rem;
+    background: linear-gradient(45deg, var(--dark-pink), var(--dark-magenta));
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    transition: 0.5s;
+    min-width: fit-content !important;
+    
+}
+.devbtn:hover{
+    animation-name: popup;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-duration: 0.3s;
+    transform: scale(1.2);
+    cursor: default !important;
+}
